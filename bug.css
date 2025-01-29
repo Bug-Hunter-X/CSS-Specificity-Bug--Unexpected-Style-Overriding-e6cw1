@@ -1,0 +1,11 @@
+The following CSS code snippet exhibits an uncommon error related to the specificity of CSS selectors.  The `.container` class is defined twice, once with a background color and again with a different background color and a more specific child selector.  Due to the specificity of selectors, the second definition overrides the first, even though it's declared later. This can be hard to debug because the first definition is still valid, but it is never rendered.  
+
+```css
+.container {
+  background-color: lightblue;
+}
+
+.container .inner {
+  background-color: lightgreen;
+}
+```
