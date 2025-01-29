@@ -1,0 +1,11 @@
+The following corrected CSS code addresses the specificity issue by only defining the background color once.  This removes the conflicting declarations and ensures that the intended style is applied consistently.  In the event of needing both a `container` and an `inner` class style, ensuring proper scoping of class usage and proper selector use within the CSS itself is important.
+
+```css
+.container {
+  background-color: lightblue;
+}
+
+/* .container .inner {
+  background-color: lightgreen; 
+} */
+```
